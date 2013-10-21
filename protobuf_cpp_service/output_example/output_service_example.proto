@@ -1,0 +1,22 @@
+package vrpc.example;
+
+message req{
+    optional uint32 uin = 1;
+    optional string message = 2;
+}
+
+message resp_1{
+    optional uint32 uin = 1;
+    optional string message = 2;
+}
+
+message resp_2{
+    optional uint32 uin = 1;
+    optional string message = 2;
+    optional int32 ret = 3;
+}
+
+service example_service{
+    rpc call_1(req) returns(resp_1);
+    rpc call_2(req) returns(resp_2);
+}

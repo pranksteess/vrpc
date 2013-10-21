@@ -1,0 +1,5 @@
+message Lib_Head {
+    optional uint32 ver = 1;
+    optional uint32 cmd = 2;
+    optional uint32 seq = 3;
+}
